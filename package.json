@@ -1,0 +1,19 @@
+{
+  "name": "style-buddy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Style Buddy monorepo for the React Native mobile app, Node.js API, shared packages, and admin dashboard.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build:admin": "npm run build -w @style-buddy/admin",
+    "dev:api": "npm run dev -w @style-buddy/api",
+    "dev:admin": "npm run dev -w @style-buddy/admin",
+    "dev:mobile": "npm run dev -w @style-buddy/mobile",
+    "start:api": "npm run start -w @style-buddy/api",
+    "android": "npm run android -w @style-buddy/mobile",
+    "web": "npm run web -w @style-buddy/mobile"
+  }
+}
